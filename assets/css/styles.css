@@ -455,14 +455,196 @@ img {
 }
 
 
-
 /*=============== RECIPE ===============*/
+.recipe{
+  background-color: var(--container-color);
+}
+
+.recipe__container{
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.recipe__image{
+  width: 60px;
+  filter: var(--shadow-small-img);
+}
+
+.recipe__name{
+  font-size: var(--normal-font-size);
+  margin-bottom: .25rem;
+}
+
+.recipe__description{
+  font-size: var(--small-font-size);
+}
+
+.recipe__ingredient{
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+}
+
+.recipe__img{
+  width: 320px;
+  justify-self: center;
+  filter: var(--shadow-big-img);
+}
 
 
 /*=============== PRODUCTS ===============*/
+.products__container{
+  padding-top: 3.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 1rem;
+}
 
+.products__card{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 5rem .75rem 1.25rem .75rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px hsla(353, 100%, 8%, .1);
+}
+
+.products__img{
+  width: 120px;
+  position: absolute;
+  top: -3.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  filter: var(--shadow-small-img);
+  transition: transform .4s;
+}
+
+.products__name{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.products__price{
+  font-family: var(--second-font);
+  font-size: var(--h1-font-size);
+  line-height: 120%;
+  color: var(--first-color);
+}
+
+.products__button{
+  position: absolute;
+  right: .75rem;
+  bottom: 1.25rem;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 4px;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  display: inline-flex;
+  box-shadow: 0 4px 16px hsla(353, 100%, 40%, .4);
+  cursor: pointer;
+  transition: background-color .4s;
+
+  &:hover{
+    background-color: var(--first-color-alt);
+  }
+}
+
+/* when hovering product card, style on the img */
+.products__card:hover .products__img{
+  transform: translateY(-.5rem);
+}
 
 /*=============== CONTACT ===============*/
+.contact__container{
+  position: relative;
+  background-color: var(--first-color-dark);
+  padding-top: 3.5rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  row-gap: 3rem;
+}
+
+.contact__container .section__title,
+.contact__title,
+.contact__address{
+  color: var(--white-color);
+}
+
+.contact__info{
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.contact__title{
+  margin-bottom: 1rem;
+}
+
+.contact__social{
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.contact__social-link{
+  font-size: 1.5rem;
+  color: var(--first-color);
+  transition: transform .4s;
+
+  &:hover{
+    transform: translateY(-.25rem);
+  }
+}
+
+.contact__address{
+  font-style: normal;
+}
+
+.contact__map{
+  color: var(--first-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  margin-top: .5rem;
+  font-size: 1rem;
+}
+
+.contact__map span{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__image{
+  justify-self: center;
+}
+
+.contact__img{
+  width: 300px;
+}
+
+.contact__sticker-1,
+.contact__sticker-2,
+.contact__sticker-3{
+  width: 40px;
+  position: absolute;
+  opacity: .7;
+}
+
+.contact__sticker-1{
+  top: 8rem;
+  left: 1.5rem;
+}
+
+.contact__sticker-2{
+  right: 1.5rem;
+  bottom: 23rem;
+}
+
+.contact__sticker-3{
+  left: 2rem;
+  bottom: 6rem;
+}
+
+
 
 
 /*=============== FOOTER ===============*/
