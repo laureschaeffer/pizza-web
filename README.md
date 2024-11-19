@@ -7,6 +7,7 @@
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 
+![preview gif](/preview.gif)  
 ![preview img](/preview.png)
 
 
